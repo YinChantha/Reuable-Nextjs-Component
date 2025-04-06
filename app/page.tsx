@@ -1,4 +1,5 @@
 "use client";
+import DataTable from "@/components/DataTable";
 import { Button } from "@/components/ui/button";
 import { Employee } from "@/type";
 import { toast } from "sonner";
@@ -83,10 +84,10 @@ export default function Home() {
   return (
     <div className="grid items-center justify-items-center min-h-screen ">
 
-      {/* <DataTable
+      <DataTable
         data={dummyData}
         columns={['id', 'name', 'email']}
-      /> */}
+      />
       {/* <Button
         variant="outline"
         onClick={() =>
@@ -137,7 +138,7 @@ export default function Home() {
       </Button> */}
 
       {/* Basic promise toast */}
-      <Button
+      {/* <Button
         variant="outline"
         onClick={() =>
           toast.promise(fetchData(), {
@@ -148,10 +149,10 @@ export default function Home() {
         }
       >
         Basic Promise Toast
-      </Button>
+      </Button> */}
 
       {/* Promise toast with custom styling */}
-      <Button
+      {/* <Button
         variant="outline"
         onClick={() =>
           toast.promise(fetchData(), {
@@ -176,7 +177,7 @@ export default function Home() {
         }
       >
         Styled Promise Toast
-      </Button>
+      </Button> */}
     </div>
   );
 }
